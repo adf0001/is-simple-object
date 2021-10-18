@@ -1,0 +1,26 @@
+{
+  "name": "is-simple-object",
+  "version": "1.0.1",
+  "description": "to check an object by typeof and .constructor",
+  "main": "is-simple-object.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "object",
+    "type"
+  ],
+  "author": "fwg",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adf0001/is-simple-object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adf0001/is-simple-object/issues"
+  },
+  "homepage": "https://github.com/adf0001/is-simple-object#readme"
+}
