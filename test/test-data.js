@@ -15,7 +15,7 @@ module.exports = {
 		assert(is_simple_object(Object.create(Object.create({}))));			//true
 		assert(is_simple_object(Object.create(Object.create(new Object()))));		//true
 
-		assert(!is_simple_object(Object.create([])));				//false, its ancestor not simple.
+		assert(!is_simple_object(Object.create([])));				//false, the ancestor is not simple.
 		assert(!is_simple_object(Object.create(new Array())));		//false
 		assert(!is_simple_object(Object.create(new Date())));		//false
 		assert(!is_simple_object(Object.create(/reg/)));			//false
@@ -26,6 +26,8 @@ module.exports = {
 		assert(!is_simple_object(undefined));	//false
 		assert(!is_simple_object(123));			//false
 		assert(!is_simple_object("abc"));		//false
+		assert(!is_simple_object(true));		//false
+		assert(!is_simple_object(false));		//false
 		assert(!is_simple_object(new Date()));	//false
 		assert(!is_simple_object(123));			//false
 		assert(!is_simple_object(new Number(5)));		//false
