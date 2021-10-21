@@ -1,5 +1,6 @@
 
-// is-simple-object @ npm, to check if a value is a plain Object, or inherited from a plain Object.
+// is-simple-object @ npm
+// To check if a value is a simple object, that is, it's a plain Object, or its prototype is a plain Object.
 
 var is_simple_object = function (value) {
 	if (typeof value !== "object" || !value) return false;
