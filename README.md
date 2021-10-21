@@ -2,9 +2,10 @@
 To check if a value is a simple object, that is, it's a plain Object, or its prototype is a plain Object.
 
 A plain Object is defined as:
-    * `{}`
-    * `new Object`
-    * `Object.create(null)`     //ref. Object.create()
+
+* `{}`
+* `new Object`
+* `Object.create(null)`		//ref. Object.create()
 
 # Install
 ```
