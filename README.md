@@ -19,13 +19,14 @@ var is_simple_object= require("is-simple-object");
 assert(is_simple_object({}));		//true
 assert(is_simple_object(new Object()));		//true
 
-assert(is_simple_object(Object.create({})));		//true
-
-assert(is_simple_object(Object.create(new Object())));		//true
 assert(is_simple_object(Object.create(null)));		//true
+
+assert(is_simple_object(Object.create({})));		//true
+assert(is_simple_object(Object.create(new Object())));		//true
+
+assert(is_simple_object(Object.create(Object.create(null))));		//true
 assert(is_simple_object(Object.create(Object.create({}))));			//true
 assert(is_simple_object(Object.create(Object.create(new Object()))));		//true
-assert(is_simple_object(Object.create(Object.create(null))));		//true
 
 assert(!is_simple_object(Object.create([])));		//false, the prototype is not plain.
 assert(!is_simple_object(Object.create(new Array())));		//false
