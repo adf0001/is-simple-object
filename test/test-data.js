@@ -1,11 +1,11 @@
-﻿// global, for html page
+
+//global variable, for html page, refer tpsvr @ npm.
 is_simple_object = require("../is-simple-object.js");
 assert = require("assert");
 
 module.exports = {
 
-	"is_simple_object()": function (done) {
-
+	"is_simple_object": function (done) {
 		assert(is_simple_object({}));		//true
 		assert(is_simple_object(new Object()));		//true
 
@@ -71,4 +71,4 @@ module.exports = {
 if (typeof showResult !== "function") showResult = function (text) { console.log(text); }
 
 //for mocha
-if (typeof describe === "function") describe('mocha-test', function () { for (var i in module.exports) { it(i, module.exports[i]); } });
+if (typeof describe === "function") describe('is_simple_object', function () { for (var i in module.exports) { it(i, module.exports[i]).timeout(5000); } });
