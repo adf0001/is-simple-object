@@ -7,6 +7,8 @@ A plain Object is defined as:
 * `new Object`
 * `Object.create(null)`		//ref. Object.create()
 
+* `Object.create(another_simple_object)`
+
 # Install
 ```
 npm install is-simple-object
